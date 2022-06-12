@@ -284,9 +284,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--text-color-dark-theme);
 }
-/* .employees-card {
-  margin-bottom: 0;
-} */
+
 .employees-description {
   padding-top: 30px;
   padding-bottom: 30px;
