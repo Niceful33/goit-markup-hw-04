@@ -61,6 +61,8 @@ body {
 /* --------------COMPONENTS--------------------------------- */
 .logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -232,8 +234,9 @@ body {
   background-color: var(--secondary-background-theme);
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -354,11 +357,7 @@ body {
 .clients-item:first-child {
   margin: 0;
 }
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--cursor-text-color);
-  border-radius: 4px;
-}
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -371,6 +370,8 @@ body {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--cursor-text-color);
+  border: 1px solid var(--cursor-text-color);
+  border-radius: 4px;
 }
 
 /* ---------------------FOOTER--------------------------------- */
@@ -387,6 +388,7 @@ body {
   font-style: normal;
 }
 .contact-footer .logo {
+  padding: 0;
   margin-bottom: 20px;
 }
 .location-link {
@@ -407,6 +409,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-contact-element:hover,
 .footer-contact-element:focus {
   color: var(--cursor-text-color);
@@ -426,9 +429,10 @@ body {
 }
 .contact-footer .container {
   display: flex;
+  align-items: baseline;
 }
+/* -------JOIN-US----------- */
 .footer-soc {
-  margin-top: 12px;
   margin-left: 70px;
 }
 .footer-soc-list {
@@ -445,10 +449,7 @@ body {
 .footer-soc-item:first-child {
   margin: 0;
 }
-.footer-soc-item:hover,
-.footer-soc-item:focus {
-  background-color: var(--cursor-text-color);
-}
+
 .footer-soc-link {
   display: flex;
   align-items: center;
@@ -457,7 +458,11 @@ body {
   height: 100%;
   fill: var(--text-color-dark-theme);
 }
-
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  border-radius: 50%;
+  background-color: var(--cursor-text-color);
+}
 /* ------------PORTFOLIO-------------------------------------- */
 .portfolio {
   padding-top: var(--section-pading-size);
@@ -519,6 +524,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-text-color);
 }
 .project-filters {
   font-size: 16px;
@@ -526,8 +532,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.project-item:hover {
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
